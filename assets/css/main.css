@@ -1,0 +1,220 @@
+body{
+    font-size: 18px;
+    min-height: 100vh;
+    color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    /* background-image: url(https://as2.ftcdn.net/v2/jpg/02/59/78/95/1000_F_259789521_uWCeEJXj41HWbyQNDc6pDywAIlkNNbY7.jpg) ; */
+    background-image: url(../img/anhnen.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: backgroundZooomAnimate 20s forwards;
+    /* animation: backgroundZooomAnimate1 20s forwards; */
+
+    
+    /* lặp lại animation vô tận  */
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundZooomAnimate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+/* @keyframes backgroundZooomAnimate1 {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+} */
+
+.header-infor {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    width: 650px;
+    height: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+    padding: 3rem 5rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-img {
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit:cover ;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+    display: block;
+}
+
+.Profile-card__desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-card__name {
+    margin: 0;
+}
+
+.Profile-card__desc h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.Profile-card__desc div{
+    font-size: 20px;
+}
+
+.Prpfile_location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.profile-card__info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card__info {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.nav-info {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-info__mem {
+    font-size: 16px;
+    opacity: 0.7;
+    padding-bottom: 12px;
+}
+
+.profile-card__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-card__social a {
+    display: inline-flex;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    font-size: 40px;
+    margin: 15px;
+    border-radius: 40%;
+    align-items: center;
+    justify-self: center;
+    /* color: #fff; */
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.profile-card__social a :hover {
+    transform: scale(1.2) translateY(-5px);
+}
+.facebook {
+    color: #0078d7;
+    /* box-shadow:  0 4px 30px rgba(63, 65, 67, 0.6); */
+
+}
+
+.twitter {
+    color: #1c9aef;
+    /* box-shadow:  0 4px 30px rgba(63, 65, 67, 0.6); */
+
+}
+
+.instagram {
+    color: #a84b19;
+    /* box-shadow:  0 4px 30px rgba(63, 65, 67, 0.6); */
+
+}
+
+.behance {
+    color: #0055fd;
+    /* box-shadow:  0 4px 30px rgba(63, 65, 67, 0.6); */
+} 
+
+.github {
+    color: black;
+    /* box-shadow:  0 4px 30px rgba(63, 65, 67, 0.6); */
+}
+
+.profile-card__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.profile-card__actions button:hover {
+    color: #333;
+    transform: scale(1.2) translateY(-5px);
+    /* background-color: #fff; */
+}
+
+.profile-card__actions button  {
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 250px;
+    padding: 15px 0;
+    border-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+
+
+.blue {
+    color: #fff;
+    background-color: #0078d7;
+}
+ 
+
+
+.orange {
+    color: #fff;
+    background: linear-gradient(45deg, #d5135a,#f05924);
+}
+
+
